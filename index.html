@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yummy</title>
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Start Spinner  -->
+    <div class="loading">
+      <div class="sk-chase">
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+        <div class="sk-chase-dot"></div>
+      </div>
+    </div>
+    <!-- End Spinner  -->
+
+    <!-- start Side Navabr  -->
+    <div class="sideNav">
+      <div class="content p-4" id="sideNavContent">
+        <ul class="list-unstyled" id="links">
+          <li id="search"><a>Search</a></li>
+          <li id="categories"><a>Categories</a></li>
+          <li id="area"><a>Area</a></li>
+          <li id="ingredients"><a>Ingredients</a></li>
+          <li id="contact"><a>Contact Us</a></li>
+        </ul>
+        <div class="side-footer">
+          <div class="social-icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p>Copyright © 2019 All Rights Reserved.</p>
+        </div>
+      </div>
+      <div class="sideLinks py-4 px-2">
+        <div class="logo">
+          <a href=""><img src="images/logo.png" alt="logo" class="w-100" /></a>
+        </div>
+        <div class="menu">
+          <i class="fa-solid fa-bars" id="open"></i>
+          <i class="fa-solid fa-xmark" id="close"></i>
+        </div>
+        <div class="icons">
+          <i class="fa-solid fa-globe d-block"></i>
+          <i class="fa-solid fa-share-nodes"></i>
+        </div>
+      </div>
+    </div>
+    <!-- End Side Navabr  -->
+
+    <!-- Start Search  -->
+    <div class="searchInput d-none" id="searchInput">
+      <div class="container pt-5">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search By Name"
+              id="searchName"
+            />
+          </div>
+          <div class="col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search By First Letter"
+              id="searchLetter"
+              maxlength="1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Search  -->
+
+    <!-- Start Main Section  -->
+    <div class="main-section position-relative vh-100">
+      <div class="container py-5">
+        <!-- Start Spinner  -->
+        <div class="loading-main-section">
+          <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        <!-- End Spinner  -->
+
+        <div class="row g-4" id="main-section"></div>
+      </div>
+    </div>
+    <!-- End Main Section  -->
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
